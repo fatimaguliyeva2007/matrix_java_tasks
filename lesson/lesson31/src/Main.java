@@ -1,3 +1,3 @@
 void main() {
-    Customer c1 = new Customer("Fatima", 19);
+//    Customer c1 = new Customer("Fatima", 19);
 }
