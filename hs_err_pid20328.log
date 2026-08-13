@@ -1,0 +1,148 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffdbe7c5a02, pid=20328, tid=17416
+#
+# JRE version: Java(TM) SE Runtime Environment (26.0+35) (build 26+35-2893)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (26+35-2893, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# C  [ADVAPI32.dll+0x25a02]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:21618,suspend=y,server=n -javaagent:C:\Users\HUAWEI\AppData\Local\JetBrains\IdeaIC2025.2\captureAgent\debugger-agent.jar=file:///C:/Users/HUAWEI/AppData/Local/Temp/capture3317056247667737115.props --enable-preview -Dkotlinx.coroutines.debug.enable.creation.stack.trace=false -Ddebugger.agent.enable.coroutines=true -Dkotlinx.coroutines.debug.enable.flows.stack.trace=true -Dkotlinx.coroutines.debug.enable.mutable.state.flows.stack.trace=true -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 main.Main
+
+Host: 12th Gen Intel(R) Core(TM) i5-12450H, 12 cores, 15G,  Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+Time: Sat Jun 27 18:38:14 2026 Azerbaijan Standard Time elapsed time: 64.548941 seconds (0d 0h 1m 4s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002441bccdeb0):  JavaThread "JDWP Event Helper Thread" daemon [_thread_in_native, id=17416, stack(0x000000a83ac00000,0x000000a83ad00000) (1024K)]
+
+Stack: [0x000000a83ac00000,0x000000a83ad00000],  sp=0x000000a83acff810,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [POWRPROF.dll+0x25a02]  (no source info available)
+C  [jdwp.dll+0x172d7]  (no source info available)
+V  [jvm.dll+0x687c4e]  (no source info available)
+V  [jvm.dll+0x4a3f01]  (no source info available)
+V  [VERSION.dll+0x94f4e9]  (no source info available)
+V  [jvm.dll+0x7d71f8]  (no source info available)
+C  [ucrtbase.dll+0x2cd30]  (no source info available)
+C  [KERNEL32.DLL+0x2e957]  (no source info available)
+C  [ntdll.dll+0x87c1c]  (no source info available)
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x0000000000000000, RBX=0x000002441bcd6140, RCX=0x0000000000000000, RDX=0x000002441bcd6140
+RSP=0x000000a83acff810, RBP=0x000002441bcce2e0, RSI=0x00007ffdbe7d3fe8, RDI=0x0000000000000000
+R8 =0xffffffffffffffff, R9 =0x00007ffde6a202a0, R10=0x00000244788e0000, R11=0x0000000000000246
+R12=0x0000000000000000, R13=0x00007ffdbe7d2040, R14=0x000002447ef0a720, R15=0x00007ffdbe7d1f60
+RIP=0x00007ffdbe7c5a02, EFLAGS=0x0000000000010286
+
+XMM[0]=0x0000000000000000 0x0000000000000000
+XMM[1]=0x0000000000000000 0x0000000000000000
+XMM[2]=0x0000000000000000 0x0000000000000000
+XMM[3]=0x0000000000000000 0x0000000000000000
+XMM[4]=0x0000000000000000 0x0000000000000000
+XMM[5]=0x0000000000000000 0x0000000000000000
+XMM[6]=0x0000000000000000 0x0000000000000000
+XMM[7]=0x0000000000000000 0x0000000000000000
+XMM[8]=0x0000000000000000 0x0000000000000000
+XMM[9]=0x0000000000000000 0x0000000000000000
+XMM[10]=0x0000000000000000 0x0000000000000000
+XMM[11]=0x0000000000000000 0x0000000000000000
+XMM[12]=0x0000000000000000 0x0000000000000000
+XMM[13]=0x0000000000000000 0x0000000000000000
+XMM[14]=0x0000000000000000 0x0000000000000000
+XMM[15]=0x0000000000000000 0x0000000000000000
+  MXCSR=0x00001fa0
+
+
+Register to memory mapping:
+
+RAX=0x0 is null
+RBX=0x000002441bcd6140 points into unknown readable memory: 0x000002441bccdeb0 | b0 de cc 1b 44 02 00 00
+RCX=0x0 is null
+RDX=0x000002441bcd6140 points into unknown readable memory: 0x000002441bccdeb0 | b0 de cc 1b 44 02 00 00
+RSP=0x000000a83acff810 is pointing into the stack for thread: 0x000002441bccdeb0
+RBP=0x000002441bcce2e0 points into unknown readable memory: 0x00007ffcfb6284d0 | d0 84 62 fb fc 7f 00 00
+RSI=0x00007ffdbe7d3fe8 jli.dll
+RDI=0x0 is null
+R8 =0xffffffffffffffff is an unknown value
+R9 =0x00007ffde6a202a0 KERNEL32.DLL
+R10=0x00000244788e0000 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
+R11=0x0000000000000246 is an unknown value
+R12=0x0 is null
+R13=0x00007ffdbe7d2040 jdwp.dll
+R14=0x000002447ef0a720 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
+R15=0x00007ffdbe7d1f60 jdwp.dll
+
+Top of Stack: (sp=0x000000a83acff810)
+0x000000a83acff810:   0000000000000000 000002441bcd6140   ........@a..D...
+0x000000a83acff820:   000002441bcce2e0 000002441bd331a0   ....D....1..D...
+0x000000a83acff830:   000002441bd331a0 00007ffdbe7b76d3   .1..D....v{.....
+0x000000a83acff840:   000002441bd331a0 000002447ef0a300   .1..D......~D...
+0x000000a83acff850:   0000000000000000 0000000000000000   ................
+0x000000a83acff860:   0000000000000000 00007ffdbe7b72d7   .........r{.....
+0x000000a83acff870:   000002441bd331b0 000002447ef0a300   .1..D......~D...
+0x000000a83acff880:   000002441bd331b0 000002447ef0a300   .1..D......~D...
+0x000000a83acff890:   000002441bccfd60 000002441bccfd60   `...D...`...D...
+0x000000a83acff8a0:   000002441bccfd60 00007ffcfb0b6b63   `...D...ck......
+0x000000a83acff8b0:   000002441bcd5c40 0000024400000000   @\..D.......D...
+0x000000a83acff8c0:   0000000000000000 0000000000000000   ................
+0x000000a83acff8d0:   000002441bccdeb0 00007ffcfaf67c4e   ....D...N|......
+0x000000a83acff8e0:   000002441bccdeb0 000002447ef0a330   ....D...0..~D...
+0x000000a83acff8f0:   000002447ef0a348 000002441bccdeb0   H..~D.......D...
+0x000000a83acff900:   000002441bcd5c40 00007ffcfad83f01   @\..D....?......
+0x000000a83acff910:   000002441bcd5c40 000002441bccde01   @\..D.......D...
+0x000000a83acff920:   000002447ef0a348 0000000000000000   H..~D...........
+0x000000a83acff930:   000002441bcce100 00007ffcfadcb2c5   ....D...........
+0x000000a83acff940:   000002441bccdeb0 000002441bcd5e00   ....D....^..D...
+0x000000a83acff950:   000002447ef0c070 000002447ef0c088   p..~D......~D...
+0x000000a83acff960:   000002447ef0c160 00000000000000d8   `..~D...........
+0x000000a83acff970:   000002441bcd6180 000000a83acff9a8   .a..D......:....
+0x000000a83acff980:   0000000000000000 0000000000100000   ................
+0x000000a83acff990:   000000a83ac00000 00007ffcfb22f4e9   ...:......".....
+0x000000a83acff9a0:   0000000000000000 000002441bccdeb0   ............D...
+0x000000a83acff9b0:   0000000000000000 0000000000000000   ................
+0x000000a83acff9c0:   0000000000000000 0000019bc5300000   ..........0.....
+0x000000a83acff9d0:   0000000100010000 0000000000000000   ................
+0x000000a83acff9e0:   0000000000000000 00007ffde58e806b   ........k.......
+0x000000a83acff9f0:   000002441bcc4f50 000002441bccdeb0   PO..D.......D...
+0x000000a83acffa00:   0000000000000000 00007ffde54dc45f   ........_.M.....
+
+Instructions: (pc=0x00007ffdbe7c5a02)
+  0x00007ffdbe7c5902:   00 00 e8 d7 62 ff ff 48 8b 0d 20 28 01 00 48 8b
+  0x00007ffdbe7c5912:   09 48 8b d3 48 8b 01 4c 8b 80 20 01 00 00 41 ff
+  0x00007ffdbe7c5922:   d0 8b c8 e8 42 1a 00 00 8b f8 85 c0 74 5e 8b c8
+  0x00007ffdbe7c5932:   e8 4d b1 fe ff b9 02 00 00 00 48 8b d8 ff 15 b3
+  0x00007ffdbe7c5942:   78 00 00 c7 44 24 40 3f 04 00 00 4c 8d 0d bc 7c
+  0x00007ffdbe7c5952:   00 00 48 89 74 24 38 4c 8d 05 c4 7c 00 00 48 8d
+  0x00007ffdbe7c5962:   35 59 ef 00 00 48 8b c8 48 89 74 24 30 48 8d 15
+  0x00007ffdbe7c5972:   b2 7c 00 00 89 7c 24 28 48 89 5c 24 20 e8 24 b5
+  0x00007ffdbe7c5982:   fe ff 48 8b d6 8b cf e8 3e 8b fe ff 48 8b 5c 24
+  0x00007ffdbe7c5992:   60 48 8b 74 24 68 48 83 c4 50 5f c3 cc cc 48 89
+  0x00007ffdbe7c59a2:   5c 24 08 48 89 74 24 10 57 48 83 ec 50 48 8b d9
+  0x00007ffdbe7c59b2:   48 8d 35 2f e6 00 00 48 8b 0d 70 27 01 00 f6 81
+  0x00007ffdbe7c59c2:   10 02 00 00 04 74 2f 41 b8 00 04 00 00 48 8d 0d
+  0x00007ffdbe7c59d2:   2e 80 00 00 48 8b d6 e8 5a 61 ff ff 48 8d 15 6b
+  0x00007ffdbe7c59e2:   ee 00 00 48 8d 0d fc 79 00 00 e8 ef 61 ff ff 48
+  0x00007ffdbe7c59f2:   8b 0d 38 27 01 00 48 8b 09 49 83 c8 ff 48 8b d3
+=>0x00007ffdbe7c5a02:   48 8b 01 4c 8b 88 10 01 00 00 41 ff d1 83 f8 34
+  0x00007ffdbe7c5a12:   75 23 e8 df b5 ff ff 48 8b d8 48 85 c0 74 14 48
+  0x00007ffdbe7c5a22:   8b c8 e8 c7 b8 ff ff 84 c0 75 08 48 8b cb e8 8b
+  0x00007ffdbe7c5a32:   ca ff ff 33 c0 8b c8 e8 2e 19 00 00 8b f8 85 c0
+  0x00007ffdbe7c5a42:   74 5e 8b c8 e8 39 b0 fe ff b9 02 00 00 00 48 8b
+  0x00007ffdbe7c5a52:   d8 ff 15 9f 77 00 00 c7 44 24 40 25 04 00 00 4c
+  0x00007ffdbe7c5a62:   8d 0d a8 7b 00 00 48 89 74 24 38 4c 8d 05 b0 
