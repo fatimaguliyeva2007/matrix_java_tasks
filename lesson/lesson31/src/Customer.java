@@ -1,12 +1,12 @@
 public class Customer {
     private String name;
     private int age;
-    private double balance;
+    private String fin;
 
-    public Customer(String name, int age, double balance) {
+    public Customer(String name, int age, String fin) {
         this.name = name;
         this.age = age;
-        this.balance = balance;
+        this.fin = fin;
     }
 
     public String getName() {
